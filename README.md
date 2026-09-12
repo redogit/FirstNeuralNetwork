@@ -1,26 +1,23 @@
 # FirstNeuralNetwork — REDO
 
-This repository preserves the original C# neural-network experiment and now carries clean successors beside it.
+This repository preserves the original C# neural-network experiment and carries explicit successors beside it.
 
-## Current path
+## Current build
 
-- `Class1.cs` and the original project remain historical inputs.
-- `successors/redogit-2026/` is the current minimal rebuild.
-- The REDO successor removes invalid parallel-training syntax and keeps mutation deterministic and sequential.
-- The REDO successor is intentionally small: one logistic neuron, one OR dataset, explicit loss/error behavior, and a process exit code that acts as a smoke test.
-
-## Run the REDO successor
+From the repository root:
 
 ```bash
-cd successors/redogit-2026
-dotnet run
+dotnet build REDOGIT.slnx --configuration Release
+dotnet run --project successors/redogit-2026/FirstNeuralNetwork.Redo.csproj --configuration Release --no-build
 ```
 
-The program exits with code `0` only when all four OR cases classify correctly.
+`REDOGIT.slnx` is the current solution entry point. The older solution, root source files, and project remain historical inputs rather than being silently rewritten.
+
+The current .NET 10 successor removes invalid parallel-training syntax and keeps training deterministic and sequential. It is intentionally small: one logistic neuron, one OR dataset, and an executable completion condition. The program exits with code `0` only when all four OR cases classify correctly.
 
 ## Generated ACDN C++ successor
 
-A second generated successor, the **Adaptive Connectivity Diagnostic Network**, is preserved under [`successors/`](successors/README.md) as an exact reversible archive transport:
+A separate generated successor, the **Adaptive Connectivity Diagnostic Network**, remains preserved under [`successors/`](successors/README.md) as an exact reversible archive transport:
 
 `successors/adaptive-connectivity-diagnostic-network-cpp.zip.b64`
 
