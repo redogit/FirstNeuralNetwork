@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="successors/redogit-2026/FirstNeuralNetwork.Redo.csproj" />
+  <Project Path="successors/redogit-2026-v2/FirstNeuralNetwork.Core/FirstNeuralNetwork.Core.csproj" />
+  <Project Path="successors/redogit-2026-v2/FirstNeuralNetwork.SelfCheck/FirstNeuralNetwork.SelfCheck.csproj" />
 </Solution>
