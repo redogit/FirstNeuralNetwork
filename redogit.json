@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/redogit/redogit/main/REDOGIT.schema.json",
+  "schema": "redogit/v1",
+  "repository": "redogit/FirstNeuralNetwork",
+  "current": {
+    "id": "redogit-2026-v2",
+    "status": "current",
+    "path": "successors/redogit-2026-v2",
+    "build": "dotnet build REDOGIT.slnx --configuration Release",
+    "verify": "dotnet run --project successors/redogit-2026-v2/FirstNeuralNetwork.SelfCheck/FirstNeuralNetwork.SelfCheck.csproj --configuration Release --no-build"
+  },
+  "predecessors": [
+    { "id": "legacy-csharp-experiment", "path": ".", "retained": true },
+    { "id": "redogit-2026", "path": "successors/redogit-2026", "retained": true }
+  ],
+  "history_policy": {
+    "preserve_predecessors": true,
+    "preserve_failures": true,
+    "rewrite_history": false
+  },
+  "boundary": {
+    "owns": ["logistic neuron behavior", "deterministic training", "executable classification contract"],
+    "does_not_own": ["claims that the predecessor always compiled", "ACDN successor semantics", "unverified model architectures"]
+  }
+}
