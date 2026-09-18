@@ -1,5 +1,7 @@
 # FirstNeuralNetwork — REDO
 
+Commercial-access note: the existing GNU GPLv3 license remains authoritative for material it covers. The owner's newer no-commercial-access policy does not revoke GPL rights; it governs only material not already covered by an existing license. See [COMMERCIAL_ACCESS_POLICY.md](COMMERCIAL_ACCESS_POLICY.md).
+
 This repository preserves the original C# neural-network experiment and carries explicit successors beside it.
 
 ## Current build — v2
